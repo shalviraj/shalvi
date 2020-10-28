@@ -26,7 +26,7 @@
         padding: 1em;
     }
 
-    p {
+    .text {
         font-family: sans-serif;
         font-size: 1em;
         text-justify: inter-word;
