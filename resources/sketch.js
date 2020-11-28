@@ -17,23 +17,24 @@ function setup() {
 }
 
 function draw() {
-  background(50);
-  translate(windowWidth/2, windowHeight/2);
+  background(20);
+  translate(windowWidth/3.5, windowHeight/2);
   stroke(255,255,255);
   strokeWeight(1);
   noFill();
   beginShape();
-  let noiseMax1 = mouseX/400;
-  let noiseMax2 = mouseY/400;
+  let noiseMax1 = mouseX/800;
+  let noiseMax2 = mouseY/800;
   for (let a = 0; a < TWO_PI; a += radians(5)) {
     let xoff = map(cos(a + phase), -1, 1, 0, noiseMax1);
     let yoff = map(sin(a + phase), -1, 1, 0, noiseMax2);
     let r = map(noise(xoff, yoff, zoff), 0, 1, 100, height / 2);
     let x = r * cos(a);
     let y = r * sin(a);
-    vertex(x, y);
+    vertex(x/1.25, y/1.25);
   }
   endShape(CLOSE);
   phase += 0.003;
   zoff += 0.01;
+    
 }
