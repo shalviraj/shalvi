@@ -86,7 +86,7 @@ h2 {
 
         #page2 .row {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         padding-right: 70px;
         padding-left: 70px;
         }
