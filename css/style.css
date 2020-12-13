@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/bam0srt.css");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +27,7 @@ h1 {
 }
 
 .work h1 {
-    font-family: Timberline Regular;
+    font-family: Timberline;
     font-size: 6rem;
     margin:0;
     color: black;
