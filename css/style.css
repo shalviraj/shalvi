@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+    
+}
+
+body {
+    background: black;
+}
+
+.logo {
+    display: block;
+    height: 3rem;
+    color: aqua;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.border {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid white;
+    z-index:-1;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+    font-family: Petit Formal Script;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.page1 {
+  background-size: cover;
+}
+
+.page1 h1{
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.page2 {
+  background-size: cover;
+    padding-left: 0px;
+}
+
+        .page2 h1 {
+          font-family: Timberline Regular;
+          font-size: 6rem;
+          margin:auto;
+        }
+
+        .row {
+          display: flex;
+          padding-right: 70px;
+            padding-left: 70px;
+        }
+
+        .column {
+          flex: 25%;
+          padding: 5px;
+        }
+
+        .column h1 {
+          padding-right: 50px;
+        }
+
+        .overlay {
+          position: relative;
+          width: 100%;
+          transition: .5s ease;
+          opacity:0;
+          color: white;
+          font-family: Timberline Regular;
+          font-size: 20px;
+          padding-top: 10px;
+          text-align: left;
+        }
+
+        /* When you mouse over the container, fade in the overlay title */
+        .column:hover .overlay {
+          opacity: 1;
+        }
+
+.page3 {
+  background-size: cover;
+}
+
+        .page3 h1 {
+          font-family: Timberline Regular;
+          font-size: 6rem;
+          margin:auto;
+        }
+
+.page4 {
+  background-size: cover;
+}
+
+        .page4 h1 {
+          font-family: Timberline Regular;
+          font-size: 6rem;
+          margin:auto;
+        }
+
+#fp-nav {
+    padding-right: 20px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #fff;
+    height: 4px;
+    width: 4px;
+}
+
+.fp-slidesNav.fp-bottom {
+    bottom: 250px;
+    padding-left: 100px;
+}
+
+#fp-nav ul li .fp-tooltip {
+    font-size: 1.5em;
+    font-family: Petit Formal Script, sans-serif;
+    max-width: 500px;
+}

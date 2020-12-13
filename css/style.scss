@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.page1 {
+  background: red;
+  background-size: cover;
+}
+
+.page2 {
+  background: blue;
+  background-size: cover;
+}
+
+.page2 h1 {
+  text-align: left;
+  font-size: 4rem;
+  margin-left: 2em;
+}
+
+.page3 {
+  background: green;
+  background-size: cover;
+}
+
+.page4 {
+  background: yellow;
+  background-size: cover;
+}
+
+.page4 h1 {
+  text-align: right;
+  font-size: 4rem;
+  margin-right: 2em;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #fff;
+}
+
+.fp-slidesNav.fp-bottom {
+  margin-left: 2em !important;
+}
+/*# sourceMappingURL=style.css.map */
