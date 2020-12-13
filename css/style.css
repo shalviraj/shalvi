@@ -32,7 +32,7 @@ h1 {
 
 .work h1 {
     font-family: 'Timberline';
-    font-size: 6rem;
+    font-size: 4rem;
     margin:0;
     color: black;
     text-align: left;
@@ -50,7 +50,7 @@ h1 {
         color: black;
         font-family: 'Playfair Display', serif;
         font-weight: 100;
-        font-size: 3em;
+        font-size: 2em;
         text-align: left;
         }
 
@@ -84,7 +84,7 @@ h1 {
         position: relative;
         width: 100%;
         transition: .5s ease;
-        opacity:0;
+        opacity:1;
         color: black;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
