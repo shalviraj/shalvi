@@ -4,6 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
 
 * {
   margin: 0;
@@ -13,6 +22,7 @@
 
 body {
     background: black;
+    scroll-snap-type: mandatory;
 }
 
 .logo {
@@ -25,60 +35,69 @@ body {
 }
 
 h1 {
+    font-family: 'Timberline';
     text-align: center;
-    font-size: 1.5em;
+    font-size: 4em;
     font-weight: 100;
 }
 
-.work h1 {
-    font-family: 'Timberline';
-    font-size: 4rem;
-    margin:0;
-    color: black;
-    text-align: left;
-    padding-left: 70px;
-    }
-
-.page1 {
-    background-size: cover;
-    background-color: rgb(212,226,226);
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 2.2rem;
 }
 
-        .page1 h2{
-        padding-left: 70px;
-        padding-right: 100px;
-        color: black;
-        font-family: 'Playfair Display', serif;
-        font-weight: 100;
-        font-size: 2rem;
-        line-height: 2.2rem;
-        text-align: left;
+#landingpages h1 {
+    text-align: left;
+}
+
+#landingpages h2 {
+    text-align: left;
+    padding: 20px 70px 0px 70px;
+}
+
+#page1 {
+    background-size: cover;
+    background-color: rgba(212,226,226);
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+    scroll-snap-align: start;
+}
+
+        #page1 h1 {
+        padding: 200px 70px 0px 70px;
         }
 
-.page2 {
+
+#page2 {
     background-size: cover;
     background-color: rgb(224,212,212);
-    padding-left: 0px;
-    z-index:-10;
-    display: flex;
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+
+}
+
+        #page2 h1 {
+        padding: 0px 70px 0px 70px;
         }
 
-        .row {
+        #page2 .row {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         padding-right: 70px;
         padding-left: 70px;
-        z-index:0;
         }
 
-        .column {
+        #page2 .column {
         flex: 14%;
         padding: 5px;
-        z-index:1000;
         }
-
-        .column h1 {
-        padding-right: 50px;
+        
+        .image {
+        width: 10vw;
         }
 
         .overlay {
@@ -99,36 +118,77 @@ h1 {
         opacity: 1;
         }
 
-.page3 {
+
+#page3 {
     background-size: cover;
     background-color: rgb(200,200,200);
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
 }
+    #page3 h1 {
+    padding: 20px 70px 0px 70px;
+    }
 
 
-.page4 {
+#page4 {
     background-size: cover;
     background-color: rgb(212,219,208);
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+    overflow-y: hidden;
 }
 
-#fp-nav {
-    padding-right: 20px;
-}
+    #page4 h1 {
+    padding: 0px 70px 0px 70px;
+    }
+    
+    #page4 .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(190px, 1fr));
+    padding: 0px 70px;
+    }
 
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-    background: black;
-    height: 4px;
-    width: 4px;
-}
 
-.fp-slidesNav.fp-bottom {
-    bottom: 250px;
-    padding-left: 100px;
-}
-
-#fp-nav ul li .fp-tooltip {
-    font-size: 1.2em;
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
     font-family: 'Roboto', sans-serif;
-    color: black;
-    max-width: 500px;
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: none;
+    width: 25vw;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(212,226,226);
 }

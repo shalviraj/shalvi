@@ -9,8 +9,6 @@
             
             <title>Shalvi's Portfolio</title>
             
-            <!-- Custom styles for this template -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
             <link rel="stylesheet" href="css/style.css" />
             
 
@@ -20,11 +18,20 @@
         </head>
 
         <body>
+            
+            <nav>
+                    <ul>
+                         <li><a href="#page1">Home</a></li>
+                         <li><a href="#page2">Work</a></li>
+                         <li><a href="#page3">About</a></li>
+                         <li><a href="#page4">Contact</a></li>
+                    </ul>
+            </nav>
 
-            <div id="fullpage">
-                        <div class="section page1">
+            <div id="landingpages">
+                        <div id="page1">
                                     <div class="work">
-                                           <h1>Shalvi Raj</h1>
+                                           <h1>Hi, I'm Shalvi</h1>
                                     </div>
                                     <!--<img src="image/shalvi-logo.svg" ALT="Shalvi's Portfolio" class="logo">-->
                                     <div id="intro">
@@ -32,48 +39,47 @@
                                             <h2>Born in India, currently in Ireland pursuing my masters.</h2>
                                     </div>
                         </div>
-                        <div class="section page2">
-                                   
+                        <div id="page2">
                                     <div class="work">
                                            <h1>Work</h1>
                                     </div>
                                     <div class="row">
                                           <div class="column">
-                                               <a href="#">
-                                                    <img src="image/work1.svg" alt="Work" style="width:100%">
+                                               <a href="physical%20computing.html">
+                                                    <img class="image" src="image/work1.svg" alt="Work" style="width:100%">
                                                </a>
                                                <div class="overlay">Physical Computing Project</div>
                                           </div>
                                           <div class="column">
                                                <a href="#">
-                                                    <img src="image/work2.svg" alt="Work" style="width:100%">
+                                                    <img class="image" src="image/work2.svg" alt="Work" style="width:100%">
                                                </a>
                                                <div class="overlay">Photography & Post Processing</div>
                                           </div>
                                           <div class="column">
                                               <a href="#">
-                                                    <img src="image/work3.svg" alt="Work" style="width:100%">
+                                                    <img class="image" src="image/work3.svg" alt="Work" style="width:100%">
                                               </a>
                                               <div class="overlay">Interaction Design Project</div>
                                           </div>
                                           <div class="column">
                                               <a href="#">
-                                                    <img src="image/work4.svg" alt="Work" style="width:100%">
+                                                    <img class="image" src="image/work4.svg" alt="Work" style="width:100%">
                                               </a>
                                               <div class="overlay">A Sound Story</div>
                                           </div>
                                     </div>
                         </div>
-                        <div class="section page3">
+                        <div id="page3">
                                     <div class="work">
                                            <h1>About</h1>
                                     </div>
                         </div>
-                        <div class="section page4">
+                        <div id="page4">
                                     <div class="work">
                                            <h1>Contact</h1>
                                     </div>
-                                                                        <div class="row">
+                                    <div class="row">
                                           <div class="column">
                                                <a href="#">
                                                     <img src="image/contact1.svg" alt="Work" style="width:100%">
@@ -95,19 +101,27 @@
                                     </div>
                         </div>
             </div>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
-
             <script>
-                new fullpage('#fullpage', {
-                    autoScrolling: true,
-                    scrollHorizontally: true,
-                    navigation: true,
-                    navigationTooltips: ['Home', 'Work', 'About', 'Contact'],
-                    controlArrows: false,
-                    slidesNavigation: true,
-                    keyboardScrolling: true
-                });
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("myImg");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
             </script>
 
         </body>
