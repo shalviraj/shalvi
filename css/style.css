@@ -72,7 +72,7 @@ h1 {
         }
 
         .column {
-        flex: 17%;
+        flex: 14%;
         padding: 5px;
         z-index:1000;
         }
