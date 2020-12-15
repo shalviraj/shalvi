@@ -210,4 +210,7 @@ li a:hover:not(.active) {
     #page3 p{
     width: 60vw;
 }
+    #page3{
+        height: 100vh;
+    }
 }
