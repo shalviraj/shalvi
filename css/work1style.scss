@@ -20,8 +20,9 @@ html::-webkit-scrollbar {
 }
 
 h1{
-    font-family: 'Timberline';
-    font-size: 4rem;
+    font-family: serif;
+    font-size: 3rem;
+    line-height: 3rem;
     margin:0;
     color: black;
     text-align: left;
@@ -187,4 +188,8 @@ li a:hover:not(.active) {
           color: #004d40;
           text-align: center;
         }
+    
+    h1{
+    font-size: 4rem;
+}
 }

@@ -55,6 +55,7 @@ main {
 h1{
     font-family: 'Timberline';
     font-size: 3rem;
+    line-height: 3rem;
     color: black;
     text-align: left;
 }

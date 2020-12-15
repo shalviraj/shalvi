@@ -57,7 +57,8 @@ main {
 
 h1{
     font-family: 'Timberline';
-    font-size: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
     color: black;
     text-align: left;
 }
@@ -318,6 +319,9 @@ li a:hover:not(.active) {
         .text {
             width: 60vw;
             padding: 0px 0px 0px 50px;
+        }
+            h1{
+        font-size: 4rem;
         }
     
         #content1 {
