@@ -17,11 +17,10 @@ html::-webkit-scrollbar {
 * {
   margin: 0;
   padding: 0;
-    
 }
 
 body {
-    background: black;
+    background: white;
     scroll-snap-type: mandatory;
 }
 
@@ -35,19 +34,27 @@ body {
 }
 
 h1 {
+    font-family: 'Timberline';
     text-align: center;
-    font-size: 1.5em;
+    font-size: 4rem;
     font-weight: 100;
 }
 
-.work h1 {
-    font-family: 'Timberline';
-    font-size: 4rem;
-    margin:0;
-    color: black;
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+
+#landingpages h1 {
     text-align: left;
-    padding-left: 70px;
-    }
+}
+
+#landingpages h2 {
+    text-align: left;
+    padding: 20px 70px 0px 70px;
+}
 
 #page1 {
     background-size: cover;
@@ -58,17 +65,10 @@ h1 {
     scroll-snap-align: start;
 }
 
-        #page1 h2{
-        padding-left: 70px;
-        padding-right: 100px;
-        padding-bottom: 10px;
-        color: black;
-        font-family: 'Playfair Display', serif;
-        font-weight: 100;
-        font-size: 2rem;
-        line-height: 2.2rem;
-        text-align: left;
+        #page1 h1 {
+        padding: 100px 70px 0px 70px;
         }
+
 
 #page2 {
     background-size: cover;
@@ -76,22 +76,26 @@ h1 {
     height: 100vh;
     width: 100%;
     display: inline-block;
+}
+
+        #page2 h1 {
+        padding: 0px 70px 0px 70px;
         }
 
-        .row {
+        #page2 .row {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         padding-right: 70px;
         padding-left: 70px;
         }
 
-        .column {
+        #page2 .column {
         flex: 14%;
         padding: 5px;
         }
-
-        .column h1 {
-        padding-right: 50px;
+        
+        .image {
+        width: 10vw;
         }
 
         .overlay {
@@ -112,6 +116,7 @@ h1 {
         opacity: 1;
         }
 
+
 #page3 {
     background-size: cover;
     background-color: rgb(200,200,200);
@@ -119,6 +124,9 @@ h1 {
     width: 100%;
     display: inline-block;
 }
+    #page3 h1 {
+    padding: 20px 70px 0px 70px;
+    }
 
 
 #page4 {
@@ -127,7 +135,18 @@ h1 {
     height: 100vh;
     width: 100%;
     display: inline-block;
+    overflow-y: hidden;
 }
+
+    #page4 h1 {
+    padding: 0px 70px 0px 70px;
+    }
+    
+    #page4 .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(190px, 1fr));
+    padding: 0px 70px;
+    }
 
 
 nav {
@@ -139,7 +158,7 @@ nav {
     bottom: 0;
     background-color: #333;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 ul {
